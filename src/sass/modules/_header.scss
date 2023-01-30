@@ -1,3 +1,4 @@
+$orangeux: #D0A45E;
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,13 @@
 .topnav {
     overflow: hidden;
     background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topnav h1 {
+    color: white;
 }
 
 .topnav a {
@@ -14,7 +22,6 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
 }
 
 .topnav a:hover {
@@ -26,11 +33,23 @@
     display: none;
 }
 
+.topnav button {
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+    border: 2px solid $orangeux;
+    height: 40px;
+    padding: 0px 10px 0px 10px;
+}
 
 // Media Queries
 // Navbar
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav button {
         display: none;
     }
 
