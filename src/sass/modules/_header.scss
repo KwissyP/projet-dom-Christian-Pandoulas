@@ -85,6 +85,7 @@ header::before {
     border: 2px solid $orangeux;
     height: 40px;
     padding: 0px 20px 0px 20px;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -92,6 +93,7 @@ header::before {
 }
 
 #div3 {
+    display: flex;
     position: relative;
     color: white;
     padding-top: 15%;
@@ -99,6 +101,59 @@ header::before {
 
 #div3 h1 span {
     color: $orangeux;
+}
+
+#galere {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    margin-left: 45%;
+    margin-top: 2%;
+    background-color: #d0a45e80;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#pulseButton {
+    border-radius: 50%;
+    background-color: $orangeux;
+    border: none;
+    animation: pulse 2s infinite;
+}
+
+#pulseButton i {
+    padding: 30px;
+    color: white;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(208, 164, 94, 0.7);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 15px rgba(208, 164, 94, 0);
+	}
+}
+
+#pulseButton:hover i {
+    animation: play 1s ease-in-out;
+}
+
+@keyframes play {
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(15);
+    }
+    100% {
+        color: #D0A45E;;
+    }
 }
 
 // Media Queries
