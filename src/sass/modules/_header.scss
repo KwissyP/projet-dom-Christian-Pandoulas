@@ -180,6 +180,7 @@ header::before {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    display: flex;
 }
 
 .close {
@@ -194,6 +195,10 @@ header::before {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.modalBtn {
+    border-radius: 25px;
 }
 
 // Media Queries
