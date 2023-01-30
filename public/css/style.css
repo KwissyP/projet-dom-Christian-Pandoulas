@@ -21238,6 +21238,10 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+.container {
+  width: 1320px;
+}
+
 header {
   position: relative;
 }
@@ -21251,21 +21255,41 @@ header::before {
   width: 100%;
   height: 720px;
   filter: brightness(50%);
-  top: 0;
-  left: 0;
+}
+
+#firstDiv {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .divHeader {
   position: relative;
 }
 
+.divHeader span {
+  color: white;
+}
+
+.divHeader span i {
+  color: #D0A45E;
+}
+
+.spanHeader:hover {
+  color: #D0A45E;
+}
+
 .topnav {
+  padding-left: 38px;
+  padding-right: 25px;
   position: relative;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.608);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 80px;
 }
 
 .topnav h1, .topnav .h1 {
@@ -21287,7 +21311,7 @@ header::before {
   display: none;
 }
 
-.topnav button {
+.button {
   border-radius: 25px;
   background: transparent;
   color: white;
@@ -21296,8 +21320,17 @@ header::before {
   padding: 0px 20px 0px 20px;
 }
 
-.topnav button:hover {
+.button:hover {
   background-color: #D0A45E;
+}
+
+#div3 {
+  position: relative;
+  color: white;
+}
+
+#div3 h1 span, #div3 .h1 span {
+  color: #D0A45E;
 }
 
 @media screen and (max-width: 960px) {
