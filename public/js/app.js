@@ -1,4 +1,7 @@
-//Navbar
+// Header
+// Date
+document.getElementById('date').innerHTML = Date();
+// Navbar
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
