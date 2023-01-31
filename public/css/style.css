@@ -21279,6 +21279,7 @@ textarea.form-control-lg {
 .carte {
   margin-top: 50px;
   width: 50%;
+  transition: all 0.3s ease-in-out;
 }
 
 .imgDiv3 {
@@ -21343,6 +21344,8 @@ textarea.form-control-lg {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 h1, .h1,
@@ -23087,8 +23090,6 @@ header::before {
 }
 #whyUs {
   padding-top: 4%;
-  background-color: black;
-  color: white;
   padding-bottom: 4%;
 }
 
@@ -23172,6 +23173,11 @@ header::before {
 
 .triplette:hover div {
   transform: translateY(-15px);
+}
+
+#specials {
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 /*# sourceMappingURL=style.css.map */
