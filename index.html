@@ -37,7 +37,7 @@
                 <a href="#chefs">Chefs</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div><button class="button" id="modalOne">CONNEXION</button>
+            <div><button class="button" id="btnModalOne">CONNEXION</button>
             </div>
         </nav>
         <div class='container' id="div3">
@@ -48,14 +48,22 @@
                     TABLE</button>
             </div>
             <div>
-                <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
+                <a class="glightbox play-btn" id="modalTwo"></a>
             </div>
         </div>
-        <div id="myModal" class="modal">
+        <div class="modal" id="modalOne">
+            <div class="modal-content-One">
+                <span class="closeOne">&times;</span>
+                <button class="modalBtn">Inscription</button>
+                <button class="modalBtn">Connexion</button>
+            </div>
+        </div>
+        <div class="modal" id="modalTwo">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <button class="modalBtn">Connexion</button>
-                <button class="modalBtn">Inscription</button>
+                <iframe id="video" width="80%" height="500px" src="" frameborder="0"
+                    allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </header>

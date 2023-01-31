@@ -11,9 +11,9 @@ function myFunction() {
     }
 }
 // Modal
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("modalOne");
-let span = document.getElementsByClassName("close")[0];
+let modal = document.getElementById("modalOne");
+let btn = document.getElementById("btnModalOne");
+let span = document.querySelector(".closeOne");
 
 btn.onclick = function () {
     modal.style.display = "block";
@@ -28,3 +28,28 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+// Modal Video
+const modalTwo = document.querySelector(".modal#modalTwo");
+const playBtn = document.querySelector(".play-btn");
+const closeBtn = document.querySelector(".close");
+const video = document.getElementById("video");
+
+playBtn.addEventListener("click", function () {
+    modalTwo.style.display = "block";
+    playBtn.style.display = "none";
+    video.src = "https://www.youtube.com/embed/u6BOC7CDUTQ?autoplay=1&mute=1";
+});
+
+closeBtn.addEventListener("click", function () {
+    modalTwo.style.display = "none";
+    playBtn.style.display = 'block';
+    video.src = "";
+});
+
+window.addEventListener("click", function (e) {
+    if (e.target == modalTwo) {
+        modalTwo.style.display = "none";
+        video.src = "";
+    }
+});

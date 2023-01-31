@@ -21412,6 +21412,35 @@ header::before {
     opacity: 0;
   }
 }
+.modal-content-One {
+  background-color: white;
+  margin: auto;
+  padding: auto;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+  height: 500px;
+}
+
+.closeOne {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeOne:hover,
+.closeOne:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalBtn {
+  border-radius: 25px;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -21427,16 +21456,15 @@ header::before {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: black;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  display: flex;
 }
 
 .close {
-  color: #aaaaaa;
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -21444,13 +21472,9 @@ header::before {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #aaaaaa;
   text-decoration: none;
   cursor: pointer;
-}
-
-.modalBtn {
-  border-radius: 25px;
 }
 
 @media screen and (max-width: 768px) {
