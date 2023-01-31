@@ -1,8 +1,8 @@
 #whyUs {
-    padding-top: 3%;
+    padding-top: 4%;
     background-color: black;
     color: white;
-    padding-bottom: 3%;
+    padding-bottom: 4%;
 }
 
 .title {
@@ -47,7 +47,6 @@
     padding: 2%;
     background: #1a1814;
     width: 32%;
-    transition: all ease-in-out 0.3s;
 }
 
 .triplette span {
@@ -70,4 +69,20 @@
     font-size: 15px;
     margin: 0;
     padding: 0;
+}
+
+.triplette:hover {
+    background: #cda45e;
+}
+
+.triplette:hover span, .triplette:hover h4, .triplette:hover p {
+    color: #fff;
+}
+
+.triplette div {
+    transition: all 1s ease-in-out;
+}
+
+.triplette:hover div {
+    transform: translateY(-10px);
 }
