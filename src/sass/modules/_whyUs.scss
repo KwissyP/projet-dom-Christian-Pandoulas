@@ -1,0 +1,73 @@
+#whyUs {
+    padding-top: 3%;
+    background-color: black;
+    color: white;
+    padding-bottom: 3%;
+}
+
+.title {
+    padding-bottom: 40px;
+}
+
+#whyUs .title p {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: rgb(205, 164, 94);
+    margin: 0px;
+}
+
+#whyUs .title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(170, 170, 170);
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px 0px 5px;
+}
+
+#whyUs .title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 4px 10px;
+}
+
+#groupette {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.triplette {
+    padding: 2%;
+    background: #1a1814;
+    width: 32%;
+    transition: all ease-in-out 0.3s;
+}
+
+.triplette span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #cda45e;
+}
+
+.triplette h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.triplette p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
