@@ -17,6 +17,7 @@ $orangeux: #D0A45E;
 }
 
 #leVraiMenu li {
+    cursor: pointer;
     list-style: none;
     color: white;
     font-family: "Playfair Display", serif;
@@ -27,12 +28,11 @@ $orangeux: #D0A45E;
 }
 
 #div3Menu {
-    position: relative;
-    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .carte {
-    position: absolute;
     margin-top: 50px;
     width: 50%;
 }

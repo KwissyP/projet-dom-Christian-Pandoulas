@@ -21261,6 +21261,7 @@ textarea.form-control-lg {
 }
 
 #leVraiMenu li {
+  cursor: pointer;
   list-style: none;
   color: white;
   font-family: "Playfair Display", serif;
@@ -21271,12 +21272,11 @@ textarea.form-control-lg {
 }
 
 #div3Menu {
-  position: relative;
-  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .carte {
-  position: absolute;
   margin-top: 50px;
   width: 50%;
 }
@@ -21719,6 +21719,14 @@ header::before {
 
 .container {
   width: 1320px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .w-25 {
