@@ -21244,6 +21244,41 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+#menu {
+  background-color: #1a1814;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+#div2Menu {
+  display: flex;
+  justify-content: center;
+}
+
+#leVraiMenu {
+  display: flex;
+  gap: 30px;
+}
+
+#leVraiMenu li {
+  list-style: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+#leVraiMenu li:hover {
+  color: #D0A45E;
+}
+
+#div3Menu {
+  position: relative;
+}
+
+.plat {
+  position: absolute;
+  margin-top: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22997,7 +23032,7 @@ header::before {
   padding-bottom: 40px;
 }
 
-#whyUs .title p {
+.title p {
   font-size: 36px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
@@ -23005,7 +23040,7 @@ header::before {
   margin: 0px;
 }
 
-#whyUs .title h2, #whyUs .title .h2 {
+.title h2, .title .h2 {
   font-size: 14px;
   font-weight: 500;
   line-height: 1px;
@@ -23017,10 +23052,10 @@ header::before {
   margin: 0px 0px 5px;
 }
 
-#whyUs .title h2::after, #whyUs .title .h2::after {
+.title h2::after, .title .h2::after {
   content: "";
   width: 120px;
-  height: 1px;
+  height: 1.5px;
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
   margin: 4px 10px;
