@@ -78,12 +78,13 @@ header::before {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
+    height: 75px;
     z-index: 10;
 }
 
 .topnav h1 {
     color: white;
+    font-family: 'Poppins';
 }
 
 .topnav a {
