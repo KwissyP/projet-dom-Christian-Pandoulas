@@ -21764,6 +21764,72 @@ footer {
   color: #fff;
 }
 
+.footerTop .footerInfo .social-links {
+  margin-top: 1rem;
+}
+
+.footerTop .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #28251f;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footerTop .social-links a:hover {
+  background-color: #cda45e;
+}
+
+.footerTop .footerLinks {
+  margin-bottom: 30px;
+}
+
+.footerTop .footerLinks h4, .footerTop .footerLinks .h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footerTop .footerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerTop .footerLinks ul li:first-child {
+  padding-top: 0;
+}
+
+.footerTop .footerLinks ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footerTop .footerLinks i {
+  padding-right: 2px;
+  color: #cda45e;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.footerTop .footerLinks a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+}
+
 .container {
   width: 1320px;
 }

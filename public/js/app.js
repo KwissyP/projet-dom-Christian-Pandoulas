@@ -104,11 +104,12 @@ function vTab(evt, plat) {
 
 document.getElementById("tab-1").click();
 
-// Scroll to top
+// Scroll to top & Arrow Button 
 let mybutton = document.getElementById("arrowBtn");
 
 window.onscroll = function () {
-    scrollFunction()
+    scrollFunction();
+    stickNav()
 };
 
 function scrollFunction() {
@@ -122,6 +123,17 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+let navbar = document.getElementById("myTopnav");
+let sticky = navbar.offsetTop;
+
+function stickNav() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
 }
 
 // First Carousel
@@ -200,21 +212,5 @@ for (let i = 0; i < sliders.length; ++i) {
         else animateSlider(num + 1, true);
 
         intrvl = setInterval(animateSlider, interval);
-    }
-}
-
-// Navbar Scroll
-window.onscroll = function () {
-    stickNav()
-};
-
-var navbar = document.getElementById("myTopnav");
-var sticky = navbar.offsetTop;
-
-function stickNav() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-    } else {
-        navbar.classList.remove("sticky");
     }
 }
