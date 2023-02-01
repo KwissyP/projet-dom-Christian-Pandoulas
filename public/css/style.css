@@ -23707,4 +23707,29 @@ header::before {
   margin-top: 40px;
 }
 
+#rightContact {
+  width: 70%;
+  margin-left: 10%;
+}
+
+#rightContact .field-split {
+  width: 49.1%;
+}
+
+#rightContact .form-style-9 li {
+  margin: 3%;
+}
+
+#rightContact .form-style-9 li {
+  margin: 3%;
+}
+
+#rightContact .form-style-9 #firstLi {
+  margin-top: 0%;
+}
+
+#rightContact #textArea {
+  height: 180px;
+}
+
 /*# sourceMappingURL=style.css.map */
