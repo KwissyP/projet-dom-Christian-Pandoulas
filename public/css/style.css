@@ -21744,6 +21744,7 @@ footer {
 
 .footerTop .footerInfo {
   margin-bottom: 30px;
+  width: 35%;
 }
 
 .footerTop .footerInfo h3, .footerTop .footerInfo .h3 {
@@ -21789,7 +21790,7 @@ footer {
 
 .footerTop .footerLinks {
   margin-bottom: 30px;
-  width: 22%;
+  width: 30%;
 }
 
 .footerTop h4, .footerTop .h4 {
@@ -21861,6 +21862,12 @@ footer {
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
+}
+
+footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .container {
