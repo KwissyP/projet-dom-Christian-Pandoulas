@@ -202,3 +202,19 @@ for (let i = 0; i < sliders.length; ++i) {
         intrvl = setInterval(animateSlider, interval);
     }
 }
+
+// Navbar Scroll
+window.onscroll = function () {
+    stickNav()
+};
+
+var navbar = document.getElementById("myTopnav");
+var sticky = navbar.offsetTop;
+
+function stickNav() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
