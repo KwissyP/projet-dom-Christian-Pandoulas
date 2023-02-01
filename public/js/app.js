@@ -102,5 +102,4 @@ function vTab(evt, plat) {
     evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("tab-1").click();

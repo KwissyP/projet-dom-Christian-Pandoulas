@@ -23229,12 +23229,6 @@ header::before {
   font-size: 15px;
 }
 
-#leftSpecials li a:active {
-  color: #1a1814;
-  background: #cda45e;
-  border-color: #cda45e;
-}
-
 .activeTab .designTab h3, .activeTab .designTab .h3 {
   font-size: 26px;
   font-weight: 600;
@@ -23270,6 +23264,14 @@ header::before {
 
 .englobeSpecials {
   padding-left: 2%;
+}
+
+.active {
+  background-color: #cda45e;
+}
+
+.active a {
+  color: #1a1814 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

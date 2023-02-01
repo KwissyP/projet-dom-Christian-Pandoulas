@@ -18,7 +18,7 @@
 
 #leftSpecials li {
     list-style: none;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 #leftSpecials li:hover a {
@@ -34,12 +34,6 @@
     border-right: 2px solid #cda45e;
     font-weight: 600;
     font-size: 15px;
-}
-
-#leftSpecials li a:active {
-    color: #1a1814;
-    background: #cda45e;
-    border-color: #cda45e;
 }
 
 .activeTab .designTab h3{
@@ -77,4 +71,12 @@
 
 .englobeSpecials {
     padding-left: 2%;
+}
+
+.active {
+    background-color: #cda45e;
+}
+
+.active a {
+    color: #1a1814!important;
 }
