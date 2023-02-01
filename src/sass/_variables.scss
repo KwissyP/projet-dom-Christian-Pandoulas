@@ -3,6 +3,5 @@
 
 // COLORS
 $custom-colors: ("lightgrey": #dddddd, "orangeux": #D0A45E);
-
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);

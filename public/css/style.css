@@ -21268,7 +21268,7 @@ textarea.form-control-lg {
 }
 
 #leVraiMenu li:hover {
-  color: #D0A45E;
+  color: #cda45e;
 }
 
 #div3Menu {
@@ -21396,11 +21396,11 @@ header::before {
 }
 
 .divHeader span i {
-  color: #D0A45E;
+  color: #cda45e;
 }
 
 .spanHeader:hover {
-  color: #D0A45E;
+  color: #cda45e;
 }
 
 .topnav {
@@ -21427,7 +21427,7 @@ header::before {
 }
 
 .topnav a:hover {
-  color: #D0A45E;
+  color: #cda45e;
 }
 
 .topnav .icon {
@@ -21438,14 +21438,14 @@ header::before {
   border-radius: 25px;
   background: transparent;
   color: white;
-  border: 2px solid #D0A45E;
+  border: 2px solid #cda45e;
   height: 40px;
   padding: 0px 20px 0px 20px;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #D0A45E;
+  background-color: #cda45e;
 }
 
 #div3 {
@@ -21466,7 +21466,7 @@ header::before {
 }
 
 #div3 h1 span, #div3 .h1 span {
-  color: #D0A45E;
+  color: #cda45e;
 }
 
 #div3 p {
@@ -21662,7 +21662,7 @@ header::before {
 }
 
 #leftAbout .fa-circle-check {
-  color: #D0A45E;
+  color: #cda45e;
 }
 
 #imgAbout {
@@ -21730,6 +21730,22 @@ header::before {
 
 .d-flex {
   display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  line-height: 1.25;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  width: 100%;
 }
 
 .w-25 {
@@ -23178,6 +23194,82 @@ header::before {
 #specials {
   padding-top: 4%;
   padding-bottom: 4%;
+}
+
+#specials #divSpecials {
+  display: flex;
+}
+
+#leftSpecials {
+  width: 28%;
+}
+
+#leftSpecials ul {
+  border: 0;
+  flex-direction: column;
+}
+
+#leftSpecials li {
+  list-style: none;
+  transition: 0.3s;
+}
+
+#leftSpecials li:hover a {
+  color: #cda45e;
+}
+
+#leftSpecials li a {
+  color: white;
+  border: 0;
+  padding: 12px 15px;
+  transition: 0.3s;
+  border-radius: 0;
+  border-right: 2px solid #cda45e;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#leftSpecials li a:active {
+  color: #1a1814;
+  background: #cda45e;
+  border-color: #cda45e;
+}
+
+.activeTab .designTab h3, .activeTab .designTab .h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.activeTab .designTab p {
+  color: #aaaaaa;
+}
+
+.activeTab .designTab p:nth-child(2) {
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+.imgTab {
+  text-align: center;
+}
+
+.imgOfimgTab {
+  max-width: 100%;
+  height: auto;
+}
+
+#rightSpecials {
+  width: 70%;
+}
+
+#rightSpecials .englobeSpecials {
+  display: flex;
+}
+
+.englobeSpecials {
+  padding-left: 2%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -59,36 +59,48 @@ const foodbox = document.querySelectorAll('.carte');
 const menu = document.querySelectorAll('#leVraiMenu');
 
 menu.forEach(m => {
-    m.addEventListener('click', e=>{
+    m.addEventListener('click', e => {
         console.log(e.target.innerHTML)
         foodbox.forEach(box => {
             box.classList.add('d-none')
-            if(e.target.innerHTML === 'All')
-            {
+            if (e.target.innerHTML === 'All') {
                 box.classList.remove('d-none')
-            }
-            else if(e.target.innerHTML==='Starters'){
-                if(box.classList.contains('starters'))
-                {
+            } else if (e.target.innerHTML === 'Starters') {
+                if (box.classList.contains('starters')) {
                     box.classList.remove('d-none')
                 }
-                
-            }
-            else if(e.target.innerHTML==='Salads'){
-                if(box.classList.contains('salads'))
-                {
+
+            } else if (e.target.innerHTML === 'Salads') {
+                if (box.classList.contains('salads')) {
                     box.classList.remove('d-none')
                 }
-                
-            }
-            else if(e.target.innerHTML==='Specialty'){
-                if(box.classList.contains('specialty'))
-                {
+
+            } else if (e.target.innerHTML === 'Specialty') {
+                if (box.classList.contains('specialty')) {
                     box.classList.remove('d-none')
                 }
-                
+
             }
         })
-        
+
     })
 })
+
+// Vertical Tab
+function vTab(evt, plat) {
+    let i, activeTab, tablinks;
+    activeTab = document.getElementsByClassName("activeTab");
+    for (i = 0; i < activeTab.length; i++) {
+        activeTab[i].className += " d-none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(plat).className += " d-block";
+    document.getElementById(plat).classList.remove('d-none');
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("tab-1").click();
