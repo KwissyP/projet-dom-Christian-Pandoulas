@@ -214,3 +214,53 @@ for (let i = 0; i < sliders.length; ++i) {
         intrvl = setInterval(animateSlider, interval);
     }
 }
+
+// Carousel 2
+let sectionAllBtn = document.querySelectorAll('.section7-btn')
+let translateValue = 0
+let posI = 0
+
+function applyColorBtn(i) {
+    for (let index = 0; index < sectionAllBtn.length; index++) {
+        if (index == i) {
+            sectionAllBtn[index].classList.add('bkMain')
+        }else{
+            sectionAllBtn[index].classList.remove('bkMain')
+        }
+        
+    }
+}
+
+
+for (let index = 0; index < sectionAllBtn.length; index++) {
+    sectionAllBtn[index].addEventListener('click', () => {
+        applyColorBtn(index)
+        posI = index
+        translateValue = index * (-100)
+        console.log('btnCarousell call Value: ' + translateValue);
+        let allElem = document.querySelectorAll('.section7-elem')
+        allElem.forEach(elem => {
+            elem.style.transform = `translateX(${translateValue}%)`
+            console.log(elem.style);
+        })
+
+    })
+
+}
+
+setInterval(() => {
+    if (translateValue <= -400) {
+        translateValue = 0
+        posI = 0
+    } else {
+        translateValue -= 100
+        posI ++
+    }
+    applyColorBtn(posI)
+    let allElem = document.querySelectorAll('.section7-elem')
+    allElem.forEach(elem => {
+        elem.style.transform = `translateX(${translateValue}%)`
+        console.log(elem.style);
+    })
+
+}, 4000)
