@@ -2,3 +2,23 @@
     padding-top: 4%;
     padding-bottom: 4%;
 }
+
+#groupPics {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picsSolo {
+    overflow: hidden;
+    border-right: 3px solid #454035;
+    border-bottom: 3px solid #454035;
+    width: 25%;
+}
+
+.picsSolo img {
+    transition: all ease-in-out 0.4s;
+}
+
+.picsSolo:hover img {
+    transform: scale(1.1);
+}
