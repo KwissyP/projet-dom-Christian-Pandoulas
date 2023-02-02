@@ -57,3 +57,12 @@
 #submitResa {
     text-align: center;
 }
+
+// Media Queries
+@media screen and (max-width: 991px) {
+    .form-style-9 ul li .field-split{
+        width: 32.1%;
+        margin: 0.5%;
+        margin-left: 0%;
+    }
+}
