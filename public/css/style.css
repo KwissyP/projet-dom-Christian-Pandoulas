@@ -23812,7 +23812,10 @@ footer .copyright {
   .section5-test {
     display: flex;
     flex-direction: column;
-    height: 100%;
+  }
+  .section5-text {
+    width: 100%;
+    font-size: 13px;
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
