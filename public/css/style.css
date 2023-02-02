@@ -23515,6 +23515,17 @@ footer .copyright {
   transform: translateY(-15px);
 }
 
+@media screen and (max-width: 768px) {
+  #groupette {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .triplette {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
 #specials {
   padding-top: 4%;
   padding-bottom: 4%;
