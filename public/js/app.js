@@ -2,7 +2,9 @@
 // Date
 let date = new Date()
 let day = date.getDate()
-let month = date.toLocaleString('default', {month: 'long'});
+let month = date.toLocaleString('default', {
+    month: 'long'
+});
 let year = date.getFullYear()
 if (day < 10) {
     day = `0${day}`
@@ -282,3 +284,22 @@ toggleDarkModeBtn.addEventListener("click", function () {
     document.body.style.color = isDarkMode ? "black" : "white";
     toggleDarkModeBtn.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fa-solid fa-cloud-moon"></i>';
 });
+
+// Fade Mode
+function reveal() {
+    let reveals = document.querySelectorAll(".reveal");
+
+    for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("activeP");
+        } else {
+            reveals[i].classList.remove("activeP");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);

@@ -24206,4 +24206,28 @@ footer .copyright {
   height: 180px;
 }
 
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.activeP {
+  opacity: 1;
+}
+
+.activeP.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
