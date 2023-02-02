@@ -24121,6 +24121,20 @@ footer .copyright {
     transform: translateY(0%);
   }
 }
+@media screen and (max-width: 970px) {
+  #chefzers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardChefs {
+    width: 70%;
+  }
+  .groupEgerie {
+    margin-bottom: 10px;
+  }
+}
 #contact {
   padding-top: 4%;
   padding-bottom: 4%;
