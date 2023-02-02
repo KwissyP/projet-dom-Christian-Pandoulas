@@ -271,7 +271,7 @@ let isDarkMode = false;
 
 toggleDarkModeBtn.addEventListener("click", function () {
     isDarkMode = !isDarkMode;
-    document.body.style.backgroundColor = isDarkMode ? "black" : "white";
-    document.body.style.color = isDarkMode ? "white" : "black";
-    toggleDarkModeBtn.textContent = isDarkMode ? "Désactiver le mode sombre" : "Activer le mode sombre";
+    document.body.style.backgroundColor = isDarkMode ? "white" : "black";
+    document.body.style.color = isDarkMode ? "black" : "white";
+    toggleDarkModeBtn.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fa-solid fa-cloud-moon"></i>';
 });
