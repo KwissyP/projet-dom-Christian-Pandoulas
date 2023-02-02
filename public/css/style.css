@@ -21603,14 +21603,15 @@ header #modalOne input {
 }
 
 header #modalOne input[type=text],
-header #modalOne input[type=password] {
+header #modalOne input[type=password],
+header #modalOne input[type=email] {
   box-shadow: var(--secondary-box-shadow);
   padding-inline: 20px;
   height: 49px;
   width: 60%;
 }
 
-header #modalOne input[type=submit] {
+header #modalOne input[type=button] {
   box-shadow: var(--primary-box-shadow);
   cursor: pointer;
   font-weight: 800;

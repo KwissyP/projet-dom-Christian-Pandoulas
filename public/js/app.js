@@ -303,3 +303,51 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// Modal Connexion v2
+const signUpLink = document.querySelector("#inscription");
+const modalContent = document.querySelector(".modal-content-One");
+let closeSpan = document.querySelector(".closeOne");
+
+signUpLink.addEventListener("click", function() {
+  modalContent.innerHTML = `
+    <form action="/signup" method="post">
+      <span class="closeOne">&times;</span>
+      <span id="title">Sign up</span>
+      <input type="text" id="username" name="username" placeholder="Username">
+      <input type="email" id="email" name="email" placeholder="Email">
+      <input type="password" id="password" name="password" placeholder="Password">
+      <div id="button">
+        <input type="button" value="Sign up">
+        <span class="rip1"></span>
+        <span class="rip2"></span>
+      </div>
+      <div id="linksParent">
+        <a id="login">Sign in</a>
+        <a>Forgot your password?</a>
+      </div>
+    </form>
+  `;
+
+  closeSpan = document.querySelector(".closeOne");
+  closeSpan.addEventListener("click", function() {
+    modalContent.innerHTML = `
+      <form action="/login" method="post">
+        <span class="closeOne">&times;</span>
+        <span id="title">Sign in</span>
+        <input type="text" id="username" name="username" placeholder="Username">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <div id="button">
+          <input type="button" value="Login">
+          <span class="rip1"></span>
+          <span class="rip2"></span>
+        </div>
+        <div id="linksParent">
+          <a id="inscription">Sign up</a>
+          <a>Forgot your password?</a>
+        </div>
+      </form>
+    `;
+    modal.style.display = "none";
+  });
+});
