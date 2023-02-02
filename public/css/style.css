@@ -23782,13 +23782,6 @@ footer .copyright {
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
-  .slider,
-  .slider .imgs {
-    width: 100%;
-    height: 100%;
-    max-height: 300px;
-    position: relative;
-  }
   .section5-test {
     display: flex;
     flex-direction: column;
