@@ -94,3 +94,20 @@
 .section7-btn:hover {
     background-color: $orangeux;
 }
+
+@media screen and (max-width: 992px) {
+    .section7-row {
+        width: 700%;
+        display: flex;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+    .section7-elem {
+        height: 500px;
+    }
+    .section7-name {
+        position: absolute;
+        bottom: -85%;
+    }
+}
