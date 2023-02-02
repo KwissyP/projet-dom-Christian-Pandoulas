@@ -23609,6 +23609,23 @@ footer .copyright {
   color: #1a1814 !important;
 }
 
+@media screen and (max-width: 768px) {
+  #divSpecials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #leftSpecials {
+    width: 100%;
+  }
+  #leftSpecials li a {
+    border-right: 0;
+  }
+  #leftSpecials li a {
+    border-bottom: 2px solid #cda45e;
+  }
+}
 #events {
   padding-top: 4%;
   padding-bottom: 6%;
