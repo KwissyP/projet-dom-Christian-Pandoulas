@@ -24240,6 +24240,11 @@ footer .copyright {
   height: 180px;
 }
 
+@media screen and (max-width: 991px) {
+  #rightContact .field-split {
+    width: 48.4%;
+  }
+}
 .reveal {
   position: relative;
   opacity: 0;
