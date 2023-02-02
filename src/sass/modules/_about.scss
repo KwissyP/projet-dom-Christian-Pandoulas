@@ -73,3 +73,25 @@
     left: 45px;
     top: 10px;
 }
+
+// Media Queries
+@media (min-width: 769px) and (max-width: 1400px) {
+    #about {
+        padding-top: 18%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 1000px) {
+    #about {
+        padding-top: 25%;
+    }
+
+    #about .container {
+        flex-direction: column-reverse;
+    }
+
+    #leftAbout {
+        text-align: center;
+        margin: auto;
+    }
+}

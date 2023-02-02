@@ -461,9 +461,20 @@ header #modalOne #button {
     }
 }
 
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     #but2Div3 {
         margin-left: 0!important;
         margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #div3 {
+        display: block;
+    }
+
+    #divPlayBtn {
+        display: flex;
+        justify-content: center;
     }
 }

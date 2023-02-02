@@ -21782,10 +21782,19 @@ header #modalOne #button {
     display: block;
   }
 }
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   #but2Div3 {
     margin-left: 0 !important;
     margin-top: 2%;
+  }
+}
+@media screen and (max-width: 426px) {
+  #div3 {
+    display: block;
+  }
+  #divPlayBtn {
+    display: flex;
+    justify-content: center;
   }
 }
 #about {
@@ -21864,6 +21873,23 @@ header #modalOne #button {
   top: 10px;
 }
 
+@media (min-width: 769px) and (max-width: 1400px) {
+  #about {
+    padding-top: 18%;
+  }
+}
+@media (min-width: 426px) and (max-width: 1000px) {
+  #about {
+    padding-top: 25%;
+  }
+  #about .container {
+    flex-direction: column-reverse;
+  }
+  #leftAbout {
+    text-align: center;
+    margin: auto;
+  }
+}
 footer {
   padding: 0 0 30px 0;
   color: #fff;
