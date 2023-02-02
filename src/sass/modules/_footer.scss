@@ -13,7 +13,7 @@ footer {
 
 .footerTop .footerInfo {
     margin-bottom: 30px;
-    width: 35%;
+    width: 30%;
 }
 
 .footerTop .footerInfo h3 {
@@ -57,9 +57,14 @@ footer {
     background-color: $orangeux;
 }
 
+.fashionLinks {
+    width: 35%;
+    gap: 20%;
+    margin-right: 6%;
+}
+
 .footerTop .footerLinks {
     margin-bottom: 30px;
-    width: 30%;
 }
 
 .footerTop h4 {
@@ -141,5 +146,5 @@ footer .copyright {
 
 // Media queries
 @media screen and (max-width: 991px) {
-    
+
 }

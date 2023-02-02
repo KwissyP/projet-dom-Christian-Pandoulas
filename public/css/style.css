@@ -21905,7 +21905,7 @@ footer {
 
 .footerTop .footerInfo {
   margin-bottom: 30px;
-  width: 35%;
+  width: 30%;
 }
 
 .footerTop .footerInfo h3, .footerTop .footerInfo .h3 {
@@ -21949,9 +21949,14 @@ footer {
   background-color: #cda45e;
 }
 
+.fashionLinks {
+  width: 35%;
+  gap: 20%;
+  margin-right: 6%;
+}
+
 .footerTop .footerLinks {
   margin-bottom: 30px;
-  width: 30%;
 }
 
 .footerTop h4, .footerTop .h4 {
