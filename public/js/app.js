@@ -1,6 +1,13 @@
 // Header
 // Date
-document.getElementById('date').innerHTML = Date();
+let date = new Date()
+let day = date.getDate()
+let month = date.toLocaleString('default', {month: 'long'});
+let year = date.getFullYear()
+if (day < 10) {
+    day = `0${day}`
+}
+document.getElementById('date').innerHTML = `${day} ${month} ${year}`;
 // Navbar
 function myFunction() {
     var x = document.getElementById("myTopnav");

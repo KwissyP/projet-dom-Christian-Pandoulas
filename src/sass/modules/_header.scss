@@ -405,7 +405,7 @@ header #modalOne #button {
 
 // Media Queries
 // Navbar
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .topnav a {
         display: none;
     }
@@ -418,12 +418,18 @@ header #modalOne #button {
         display: none;
     }
 
+    .topnav #toggle-dark-mode-btn {
+        display: none;
+    }
+
     .topnav a.icon {
         display: block;
     }
 
     .topnav.responsive {
         position: relative;
+        height: 100%;
+        display: block;
     }
 
     .topnav.responsive .icon {
@@ -435,13 +441,29 @@ header #modalOne #button {
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left;
+    }
+
+    .topnav.responsive #btnNavMov {
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+        padding-bottom: 2%;
     }
 
     .topnav.responsive button {
         float: none;
         display: block;
     }
+
+    .topnav.topnav.responsive #toggle-dark-mode-btn {
+        float: none;
+        display: block;
+    }
 }
 
-@media screen and (max-width: 1024px) {}
+@media (min-width: 425px) and (max-width: 768px) {
+    #but2Div3 {
+        margin-left: 0!important;
+        margin-top: 2%;
+    }
+}
