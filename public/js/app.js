@@ -12,11 +12,11 @@ if (day < 10) {
 document.getElementById('date').innerHTML = `${day} ${month} ${year}`;
 // Navbar
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    let x = document.getElementById("myTopnav");
+    if (x.classList.contains("topnav")) {
+        x.classList.toggle("responsive");
     } else {
-        x.className = "topnav";
+        x.classList.toggle("topnav");
     }
 }
 // Modal
