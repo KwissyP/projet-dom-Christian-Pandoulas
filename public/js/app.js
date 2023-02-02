@@ -224,10 +224,10 @@ function applyColorBtn(i) {
     for (let index = 0; index < sectionAllBtn.length; index++) {
         if (index == i) {
             sectionAllBtn[index].classList.add('bkMain')
-        }else{
+        } else {
             sectionAllBtn[index].classList.remove('bkMain')
         }
-        
+
     }
 }
 
@@ -254,7 +254,7 @@ setInterval(() => {
         posI = 0
     } else {
         translateValue -= 100
-        posI ++
+        posI++
     }
     applyColorBtn(posI)
     let allElem = document.querySelectorAll('.section7-elem')
@@ -264,3 +264,14 @@ setInterval(() => {
     })
 
 }, 4000)
+
+// Dark Mode
+const toggleDarkModeBtn = document.getElementById("toggle-dark-mode-btn");
+let isDarkMode = false;
+
+toggleDarkModeBtn.addEventListener("click", function () {
+    isDarkMode = !isDarkMode;
+    document.body.style.backgroundColor = isDarkMode ? "black" : "white";
+    document.body.style.color = isDarkMode ? "white" : "black";
+    toggleDarkModeBtn.textContent = isDarkMode ? "Désactiver le mode sombre" : "Activer le mode sombre";
+});

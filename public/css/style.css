@@ -21726,6 +21726,17 @@ header #modalOne #button {
   cursor: pointer;
 }
 
+#toggle-dark-mode-btn {
+  color: white;
+  background-color: transparent;
+  border: 2px solid #cda45e;
+  border-radius: 50%;
+}
+
+#toggle-dark-mode-btn i {
+  padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .topnav a {
     display: none;
@@ -23779,6 +23790,7 @@ footer .copyright {
   color: #fff;
   border-radius: 50px;
   text-align: center;
+  border: none;
 }
 
 #submitResa {
