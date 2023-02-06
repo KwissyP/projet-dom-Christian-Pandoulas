@@ -24077,6 +24077,19 @@ footer .copyright {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 850px) {
+  #groupPics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .picsSolo {
+    width: 60%;
+    border: 3px solid #454035;
+    margin: 0.5%;
+  }
+}
 #chefs {
   padding-top: 4%;
   padding-bottom: 4%;
