@@ -246,11 +246,9 @@ for (let index = 0; index < sectionAllBtn.length; index++) {
         applyColorBtn(index)
         posI = index
         translateValue = index * (-100)
-        console.log('btnCarousell call Value: ' + translateValue);
         let allElem = document.querySelectorAll('.section7-elem')
         allElem.forEach(elem => {
             elem.style.transform = `translateX(${translateValue}%)`
-            console.log(elem.style);
         })
 
     })
@@ -269,7 +267,6 @@ setInterval(() => {
     let allElem = document.querySelectorAll('.section7-elem')
     allElem.forEach(elem => {
         elem.style.transform = `translateX(${translateValue}%)`
-        console.log(elem.style);
     })
 
 }, 4000)
