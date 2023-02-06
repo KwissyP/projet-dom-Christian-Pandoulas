@@ -21742,6 +21742,10 @@ header #modalOne #button {
   background-color: #cda45e;
 }
 
+.navLink.posey {
+  color: #cda45e;
+}
+
 @media screen and (max-width: 1024px) {
   .topnav a {
     display: none;

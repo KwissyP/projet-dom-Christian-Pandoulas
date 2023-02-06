@@ -309,8 +309,8 @@ const signUpLink = document.querySelector("#inscription");
 const modalContent = document.querySelector(".modal-content-One");
 let closeSpan = document.querySelector(".closeOne");
 
-signUpLink.addEventListener("click", function() {
-  modalContent.innerHTML = `
+signUpLink.addEventListener("click", function () {
+    modalContent.innerHTML = `
     <form action="/signup" method="post">
       <span class="closeOne">&times;</span>
       <span id="title">Sign up</span>
@@ -329,9 +329,9 @@ signUpLink.addEventListener("click", function() {
     </form>
   `;
 
-  closeSpan = document.querySelector(".closeOne");
-  closeSpan.addEventListener("click", function() {
-    modalContent.innerHTML = `
+    closeSpan = document.querySelector(".closeOne");
+    closeSpan.addEventListener("click", function () {
+        modalContent.innerHTML = `
       <form action="/login" method="post">
         <span class="closeOne">&times;</span>
         <span id="title">Sign in</span>
@@ -348,6 +348,28 @@ signUpLink.addEventListener("click", function() {
         </div>
       </form>
     `;
-    modal.style.display = "none";
-  });
+        modal.style.display = "none";
+    });
+});
+
+// Scroll <a> color
+const navLinks = document.querySelectorAll('.navLink');
+const sections = document.querySelectorAll('section');
+
+window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY + window.innerHeight / 2;
+
+    sections.forEach((section) => {
+        const sectionPos = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollPos >= sectionPos && scrollPos < sectionPos + sectionHeight) {
+            navLinks.forEach((navLink) => {
+                navLink.classList.remove('posey');
+                if (`#${section.id}` === navLink.getAttribute('href')) {
+                    navLink.classList.add('posey');
+                }
+            });
+        }
+    });
 });
