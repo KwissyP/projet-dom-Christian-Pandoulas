@@ -21738,6 +21738,10 @@ header #modalOne #button {
   padding: 10px;
 }
 
+#toggle-dark-mode-btn:hover {
+  background-color: #cda45e;
+}
+
 @media screen and (max-width: 1024px) {
   .topnav a {
     display: none;

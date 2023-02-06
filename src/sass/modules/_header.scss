@@ -404,6 +404,10 @@ header #modalOne #button {
     padding: 10px;
 }
 
+#toggle-dark-mode-btn:hover {
+    background-color: #cda45e;
+}
+
 // Media Queries
 // Navbar
 @media screen and (max-width: 1024px) {
