@@ -23594,6 +23594,11 @@ footer .copyright {
     margin-bottom: 2%;
   }
 }
+@media screen and (max-width: 426px) {
+  #whyUs {
+    padding-top: 6%;
+  }
+}
 #specials {
   padding-top: 4%;
   padding-bottom: 4%;
