@@ -24111,6 +24111,15 @@ footer .copyright {
     bottom: -85%;
   }
 }
+@media screen and (max-width: 426px) {
+  #testimonials {
+    padding-top: 6%;
+  }
+  .section7-name {
+    position: absolute;
+    bottom: -60% !important;
+  }
+}
 #gallery {
   padding-top: 4%;
   padding-bottom: 4%;
