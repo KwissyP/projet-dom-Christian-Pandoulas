@@ -176,3 +176,9 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 426px) {
+    #events {
+        padding-top: 6%;
+    }
+}
