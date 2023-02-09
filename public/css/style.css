@@ -21336,7 +21336,7 @@ textarea.form-control-lg {
   color: rgba(255, 255, 255, 0.5);
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   #menu {
     padding-top: 6%;
   }
@@ -21802,13 +21802,7 @@ header #modalOne #button {
     display: block;
   }
 }
-@media (min-width: 426px) and (max-width: 768px) {
-  #but2Div3 {
-    margin-left: 0 !important;
-    margin-top: 2%;
-  }
-}
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 100% !important;
   }
@@ -21826,6 +21820,10 @@ header #modalOne #button {
   }
   #divPlayBtn {
     padding-top: 3%;
+  }
+  #but2Div3 {
+    margin-left: 0 !important;
+    margin-top: 2%;
   }
 }
 #about {
@@ -21904,14 +21902,14 @@ header #modalOne #button {
   top: 10px;
 }
 
-@media (min-width: 769px) and (max-width: 1400px) {
+@media (min-width: 1001px) and (max-width: 1400px) {
   #about {
-    padding-top: 18%;
+    padding-top: 12%;
   }
 }
-@media (min-width: 426px) and (max-width: 1000px) {
+@media (min-width: 728px) and (max-width: 1000px) {
   #about {
-    padding-top: 25%;
+    padding-top: 10%;
   }
   #about .container {
     flex-direction: column-reverse;
@@ -21921,9 +21919,9 @@ header #modalOne #button {
     margin: auto;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   #about {
-    padding-top: 3%;
+    padding-top: 35%;
   }
   #about .container {
     flex-direction: column-reverse;
@@ -23605,7 +23603,7 @@ footer .copyright {
     margin-bottom: 2%;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   #whyUs {
     padding-top: 6%;
   }
@@ -23710,7 +23708,7 @@ footer .copyright {
     border-bottom: 2px solid #cda45e;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   #specials {
     padding-top: 6%;
   }
@@ -23885,7 +23883,7 @@ footer .copyright {
     width: 100%;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   #events {
     padding-top: 6%;
   }
@@ -23987,16 +23985,21 @@ footer .copyright {
   text-align: center;
 }
 
-@media screen and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   .form-style-9 ul li .field-split {
     width: 32.1%;
     margin: 0.5%;
     margin-left: 0%;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   #reservation {
     padding-top: 15%;
+  }
+  .form-style-9 ul li .field-split {
+    width: 32%;
+    margin: 0.5%;
+    margin-left: 0%;
   }
 }
 #testimonials {
@@ -24111,7 +24114,7 @@ footer .copyright {
     bottom: -85%;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   #testimonials {
     padding-top: 6%;
   }
@@ -24158,7 +24161,7 @@ footer .copyright {
     margin: 0.5%;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   #gallery {
     padding-top: 7%;
   }
@@ -24267,7 +24270,7 @@ footer .copyright {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   #chefs {
     padding-top: 7%;
   }
@@ -24343,12 +24346,12 @@ footer .copyright {
   height: 180px;
 }
 
-@media screen and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   #rightContact .field-split {
     width: 48.4%;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   #rightContact .field-split {
     width: 100%;
     margin-bottom: 1%;

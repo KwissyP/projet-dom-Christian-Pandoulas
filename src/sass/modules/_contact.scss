@@ -69,13 +69,13 @@
     height: 180px;
 }
 
-@media screen and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
     #rightContact .field-split {
         width: 48.4%;
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
     #rightContact .field-split {
         width: 100%;
         margin-bottom: 1%;

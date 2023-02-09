@@ -75,15 +75,15 @@
 }
 
 // Media Queries
-@media (min-width: 769px) and (max-width: 1400px) {
+@media (min-width: 1001px) and (max-width: 1400px) {
     #about {
-        padding-top: 18%;
+        padding-top: 12%;
     }
 }
 
-@media (min-width: 426px) and (max-width: 1000px) {
+@media (min-width: 728px) and (max-width: 1000px) {
     #about {
-        padding-top: 25%;
+        padding-top: 10%;
     }
 
     #about .container {
@@ -96,9 +96,9 @@
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
     #about {
-        padding-top: 3%;
+        padding-top: 35%;
     }
     #about .container {
         flex-direction: column-reverse;

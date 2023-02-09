@@ -470,14 +470,11 @@ header #modalOne #button {
     }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
-    #but2Div3 {
-        margin-left: 0!important;
-        margin-top: 2%;
-    }
+@media (min-width: 728px) and (max-width: 768px) {
+    
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
     .container {
         width: 100%!important;
     }
@@ -495,5 +492,9 @@ header #modalOne #button {
     }
     #divPlayBtn {
         padding-top: 3%;
+    }
+    #but2Div3 {
+        margin-left: 0!important;
+        margin-top: 2%;
     }
 }
