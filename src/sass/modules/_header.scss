@@ -481,10 +481,14 @@ header #modalOne #button {
     .container {
         width: 100%!important;
     }
+    header::before {
+        height: 120vh;
+    }
     #div3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 3%;
     }
     #midText {
         text-align: center;

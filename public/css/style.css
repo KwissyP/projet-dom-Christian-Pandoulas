@@ -21801,10 +21801,14 @@ header #modalOne #button {
   .container {
     width: 100% !important;
   }
+  header::before {
+    height: 120vh;
+  }
   #div3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3%;
   }
   #midText {
     text-align: center;
@@ -21904,6 +21908,20 @@ header #modalOne #button {
   #leftAbout {
     text-align: center;
     margin: auto;
+  }
+}
+@media screen and (max-width: 426px) {
+  #about {
+    padding-top: 3%;
+  }
+  #about .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #leftAbout {
+    padding-top: 3%;
+    text-align: center;
   }
 }
 footer {

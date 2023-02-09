@@ -95,3 +95,18 @@
         margin: auto;
     }
 }
+
+@media screen and (max-width: 426px) {
+    #about {
+        padding-top: 3%;
+    }
+    #about .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #leftAbout {
+        padding-top: 3%;
+        text-align: center;
+    }
+}
