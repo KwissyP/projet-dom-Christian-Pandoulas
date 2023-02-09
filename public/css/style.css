@@ -24158,6 +24158,11 @@ footer .copyright {
     margin: 0.5%;
   }
 }
+@media screen and (max-width: 426px) {
+  #gallery {
+    padding-top: 7%;
+  }
+}
 #chefs {
   padding-top: 4%;
   padding-bottom: 4%;
@@ -24262,6 +24267,11 @@ footer .copyright {
     margin-bottom: 10px;
   }
 }
+@media screen and (max-width: 426px) {
+  #chefs {
+    padding-top: 7%;
+  }
+}
 #contact {
   padding-top: 4%;
   padding-bottom: 4%;
@@ -24336,6 +24346,12 @@ footer .copyright {
 @media screen and (max-width: 991px) {
   #rightContact .field-split {
     width: 48.4%;
+  }
+}
+@media screen and (max-width: 426px) {
+  #rightContact .field-split {
+    width: 100%;
+    margin-bottom: 1%;
   }
 }
 .reveal {
