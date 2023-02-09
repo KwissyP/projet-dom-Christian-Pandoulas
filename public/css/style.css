@@ -21336,6 +21336,17 @@ textarea.form-control-lg {
   color: rgba(255, 255, 255, 0.5);
 }
 
+@media screen and (max-width: 426px) {
+  #menu {
+    padding-top: 6%;
+  }
+  #div3Menu {
+    flex-direction: column;
+  }
+  .carte {
+    width: 100%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
