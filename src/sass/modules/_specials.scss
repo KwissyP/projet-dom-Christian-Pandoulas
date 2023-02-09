@@ -101,3 +101,12 @@
         border-bottom: 2px solid #cda45e;
     }
 }
+
+@media screen and (max-width: 426px) {
+    #specials {
+        padding-top: 6%;
+    }
+    .englobeSpecials {
+        flex-direction: column;
+    }
+}
