@@ -478,12 +478,18 @@ header #modalOne #button {
 }
 
 @media screen and (max-width: 426px) {
-    #div3 {
-        display: block;
+    .container {
+        width: 100%!important;
     }
-
-    #divPlayBtn {
-        display: flex;
+    #div3 {
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+    #midText {
+        text-align: center;
+    }
+    #divPlayBtn {
+        padding-top: 3%;
     }
 }
